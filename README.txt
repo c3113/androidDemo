@@ -1,1 +1,1 @@
-存放android项目资源
+android demo repository!
