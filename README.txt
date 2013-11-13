@@ -1,1 +1,1 @@
-存放androidDemo
+存放android项目资源
