@@ -62,7 +62,7 @@ public class ListAdapter extends BaseAdapter {
 		Drawable drawable = Drawable.createFromPath(path);
 		if(drawable != null){
 			image.setImageDrawable(drawable);
-//			map.remove(bean.url);
+			
 		} else {
 			if(!map.containsKey(bean.url)){
 				map.put(bean.url, image);
@@ -103,9 +103,8 @@ public class ListAdapter extends BaseAdapter {
 			if(drawable != null && map.get(array[0]) != null){
 				map.get(array[0]).setImageDrawable(Drawable.createFromPath(array[1]));
 				notifyDataSetChanged();
-			} else if(map.get(array[0]) != null){
-				map.get(array[0]).setImageResource(R.drawable.pho);
-			}
+				map.remove(array[0]);
+			} 
 		}
 		
 	};
